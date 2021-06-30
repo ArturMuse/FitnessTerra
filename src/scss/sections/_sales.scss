@@ -1,0 +1,77 @@
+.sales {
+    &__title {
+        max-width: 150px;
+        &::after {
+            background: rgba(156, 195, 47, 0.3);
+        }
+    }
+
+    &__inner {
+        margin-top: 90px;
+        position: relative;
+    }
+
+    &__slider-wrap {
+        max-width: 1280px;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    &__slider {
+        margin: auto;
+        max-width: 1250px;
+    }
+
+    &__slider-item {
+        background: #ffffff;
+        box-shadow: 0px 0px 6px 5px rgba(205, 205, 205, 0.25);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 47px;
+        &-pic {
+            max-width: 100%;
+            margin-bottom: 24px;
+            img {
+                width: 100%;
+            }
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 41px;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+        &-subtitle {
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+            color: #000000;
+            margin-bottom: 53px;
+            padding-left: 36px;
+            padding-right: 37px;
+        }
+    }
+
+    &__slider-btn {
+        position: absolute;
+        border: none;
+        background: none;
+        z-index: 2;
+        left: -20px;
+        top: calc(50% - 32px);
+        height: 64px;
+        width: 23.82px;
+        display: block;
+        cursor: pointer;
+        &:last-child {
+            left: auto;
+            right: -20px;
+        }
+    }
+}

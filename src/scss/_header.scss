@@ -1,0 +1,80 @@
+.header {
+    position: relative;
+}
+.topbar {
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 50px;
+    &__phone {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4b6b7e;
+        margin-right: 20px;
+    }
+
+    &__address {
+        margin-right: auto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #868686;
+    }
+
+    &__link {
+        height: 26px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+            margin-left: 10px;
+        }
+    }
+}
+.menu {
+    background: #ffffff;
+    box-shadow: 0px 1px 9px rgba(200, 200, 200, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    &__nav {
+        &:last-child {
+            margin-right: 58.8px;
+        }
+    }
+
+    &__nav-list {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__nav-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__nav-link {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 27px;
+        color: #4b6b7e;
+        transition: border 0.5s ease;
+        border-bottom: 1px solid transparent;
+        &:hover {
+            border-bottom: 1px solid #4b6b7e;
+        }
+    }
+}
+.logo {
+    width: 95px;
+    margin: 0 96px;
+    &__img {
+        width: 100%;
+    }
+}

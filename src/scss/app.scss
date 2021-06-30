@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    appearance: none;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+@import "ui";
+@import "./divs/form-contacts";
+@import "header";
+@import "./sections/intro";
+@import "./sections/sales";
+@import "./sections/about";
+@import "./sections/plus";
+@import "./divs/actions";
+@import "footer";

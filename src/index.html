@@ -3,15 +3,407 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DjStore</title>
+    <title>ФитнесТерра</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
-        <h2>
-            Заг
-        </h2>
+        <header class="header">
+            <div class="topbar">
+                <a href="tel:+71234567890" class="topbar__phone">
+                    +7 (123) 456 78 90
+                </a>
+                <p class="topbar__address">
+                    г. Москва, ул. Снежная, д. 20
+                </p>
+                <a href="#" class="topbar__link">
+                    <svg width="33" height="21" viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.6994 20.8125C21.4734 20.8125 19.7711 17.7903 20.1396 16.9212C20.1341 16.2722 20.1286 15.648 20.1506 15.2685C20.4531 15.3538 21.1667 15.7154 22.6407 17.1481C24.9164 19.4444 25.498 20.8125 27.3364 20.8125H30.7202C31.7927 20.8125 32.351 20.3684 32.6301 19.9958C32.8996 19.6355 33.1636 19.003 32.8749 18.0185C32.12 15.648 27.7172 11.5546 27.4436 11.1229C27.4849 11.0431 27.5509 10.9373 27.5853 10.8822H27.5825C28.4515 9.73413 31.768 4.76487 32.2561 2.77662C32.2575 2.77387 32.2589 2.76975 32.2589 2.76562C32.5229 1.85812 32.2809 1.26963 32.0306 0.936875C31.6539 0.439125 31.0544 0.1875 30.2445 0.1875H26.8606C25.7276 0.1875 24.8682 0.758125 24.4338 1.799C23.7064 3.64838 21.6631 7.45163 20.1314 8.79775C20.0846 6.89062 20.1162 5.4345 20.141 4.35237C20.1905 2.24175 20.35 0.1875 18.1596 0.1875H12.8411C11.4689 0.1875 10.1558 1.68625 11.5775 3.4655C12.8205 5.02475 12.0244 5.89375 12.2925 10.2195C11.2475 9.09887 9.3885 6.0725 8.074 2.20463C7.7055 1.15825 7.14725 0.188875 5.57562 0.188875H2.19175C0.8195 0.188875 0 0.936875 0 2.1895C0 5.00275 6.22738 20.8125 16.6994 20.8125ZM5.57562 2.25137C5.874 2.25137 5.90425 2.25138 6.12562 2.87975C7.47175 6.84387 10.4913 12.7096 12.6968 12.7096C14.3536 12.7096 14.3536 11.0115 14.3536 10.3721L14.3522 5.28187C14.2615 3.5975 13.6483 2.75875 13.2454 2.25L18.0689 2.2555C18.0716 2.27888 18.0414 7.88613 18.0826 9.24463C18.0826 11.1737 19.6144 12.2793 22.0055 9.85925C24.5286 7.01163 26.2735 2.75463 26.3436 2.58138C26.4468 2.33388 26.5361 2.25 26.8606 2.25H30.2445H30.2583C30.2569 2.25413 30.2569 2.25825 30.2555 2.26237C29.9461 3.70612 26.8923 8.30688 25.8706 9.7355C25.8541 9.7575 25.839 9.78088 25.8239 9.80425C25.3743 10.5385 25.0085 11.3497 25.8857 12.491H25.8871C25.9669 12.5872 26.1745 12.8127 26.477 13.1262C27.4175 14.097 30.6432 17.4163 30.9292 18.7362C30.7395 18.7665 30.5333 18.7445 27.3364 18.7514C26.6558 18.7514 26.1236 17.7339 24.0927 15.6851C22.2667 13.9086 21.0815 13.1826 20.0021 13.1826C17.9066 13.1826 18.0592 14.8835 18.0785 16.9405C18.0854 19.1707 18.0716 18.4654 18.0868 18.6056C17.9644 18.6538 17.6138 18.75 16.6994 18.75C7.975 18.75 2.2935 4.90238 2.07487 2.2555C2.1505 2.24863 3.19137 2.25275 5.57562 2.25137Z"
+                            fill="#C4C4C4" />
+                    </svg>
+                </a>
+                <a href="#" class="topbar__link">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.962 0H7.03795C3.15716 0 0 3.15716 0 7.03795V18.9622C0 22.8428 3.15716 26 7.03795 26H18.9622C22.8428 26 26 22.8428 26 18.9622V7.03795C26 3.15716 22.8428 0 18.962 0V0ZM24.4757 18.9622C24.4757 22.0023 22.0023 24.4757 18.962 24.4757H7.03795C3.99763 24.4757 1.52423 22.0023 1.52423 18.9622V7.03795C1.52423 3.99763 3.99763 1.52423 7.03795 1.52423H18.9622C22.0023 1.52423 24.4757 3.99763 24.4757 7.03795V18.9622Z"
+                            fill="#C4C4C4" />
+                        <path
+                            d="M13 5.89081C9.07996 5.89081 5.89087 9.0799 5.89087 13C5.89087 16.92 9.07996 20.1091 13 20.1091C16.9201 20.1091 20.1092 16.92 20.1092 13C20.1092 9.0799 16.9201 5.89081 13 5.89081ZM13 18.5849C9.92063 18.5849 7.4151 16.0796 7.4151 13C7.4151 9.92057 9.92063 7.41504 13 7.41504C16.0796 7.41504 18.585 9.92057 18.585 13C18.585 16.0796 16.0796 18.5849 13 18.5849Z"
+                            fill="#C4C4C4" />
+                        <path
+                            d="M20.2791 3.36603C19.1207 3.36603 18.1785 4.30845 18.1785 5.4667C18.1785 6.62515 19.1207 7.56757 20.2791 7.56757C21.4376 7.56757 22.38 6.62515 22.38 5.4667C22.38 4.30826 21.4376 3.36603 20.2791 3.36603ZM20.2791 6.04315C19.9614 6.04315 19.7027 5.78448 19.7027 5.4667C19.7027 5.14872 19.9614 4.89026 20.2791 4.89026C20.5971 4.89026 20.8558 5.14872 20.8558 5.4667C20.8558 5.78448 20.5971 6.04315 20.2791 6.04315Z"
+                            fill="#C4C4C4" />
+                    </svg>
+                </a>
+            </div>
+            <div class="menu">
+                <nav class="menu__nav">
+                    <ul class="menu__nav-list">
+                        <li class="menu__nav-item">
+                            <a href="#" class="menu__nav-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a href="#" class="menu__nav-link">
+                                Абонементы
+                            </a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a href="#" class="menu__nav-link">
+                                Направления
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Логотип" class="logo__img">
+                </div>
+                <nav class="menu__nav">
+                    <ul class="menu__nav-list">
+                        <li class="menu__nav-item">
+                            <a href="#" class="menu__nav-link">
+                                Расписание
+                            </a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a href="#" class="menu__nav-link">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a href="#footer" class="menu__nav-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="intro__box">
+                <h1 class="intro__title">
+                    <span>
+                        ФитнесТерра
+                    </span>
+                </h1>
+                <p class="intro__subtitle">
+                    Получите максимум комфорта
+                    и расслабления от занятий фитнесом
+                </p>
+                <button type="button" class="intro__btn btn js-popup-contact-toggle">
+                    Оставить заявку
+                </button>
+            </div>
+        </section>
+        <section class="sales section">
+            <h2 class="sales__title section-title">
+                <span>
+                    Акции
+                </span>
+            </h2>
+            <div class="sales__inner">
+                <div class="sales__slider-wrap">
+                    <div class="sales__slider js-sales-slider">
+                        <div class="sales__slider-wrapper swiper-wrapper">
+                            <div class="sales__slider-item swiper-slide">
+                                <div class="sales__slider-item-pic">
+                                    <img src="images/sales-pic.jpg" alt="Фото">
+                                </div>
+                                <h4 class="sales__slider-item-title">
+                                    Lorem ipsum
+                                </h4>
+                                <p class="sales__slider-item-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <button class="sales__slider-item-btn btn btn-sm js-popup-contact-toggle">
+                                    Узнать больше
+                                </button>
+                            </div>
+                            <div class="sales__slider-item  swiper-slide">
+                                <div class="sales__slider-item-pic ">
+                                    <img src="images/sales-pic.jpg" alt="Фото">
+                                </div>
+                                <h4 class="sales__slider-item-title">
+                                    Lorem ipsum
+                                </h4>
+                                <p class="sales__slider-item-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <button class="sales__slider-item-btn btn btn-sm js-popup-contact-toggle">
+                                    Узнать больше
+                                </button>
+                            </div>
+                            <div class="sales__slider-item swiper-slide">
+                                <div class="sales__slider-item-pic">
+                                    <img src="images/sales-pic.jpg" alt="Фото">
+                                </div>
+                                <h4 class="sales__slider-item-title">
+                                    Lorem ipsum
+                                </h4>
+                                <p class="sales__slider-item-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <button class="sales__slider-item-btn btn btn-sm js-popup-contact-toggle">
+                                    Узнать больше
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="sales__slider-btn slider-btn js-sales-slider-prev">
+                    <svg width="24" height="65" viewBox="0 0 24 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.0898 0.910156L0.0898209 33.9102L23.0898 64.9102L23.8929 64.3143L1.32147 33.8919L23.9102 1.48195L23.0898 0.910156Z"
+                            fill="#7A7A7A" />
+                    </svg>
+                </button>
+                <button class="sales__slider-btn slider-btn js-sales-slider-next">
+                    <svg width="24" height="65" viewBox="0 0 24 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.910242 64.9102L23.9102 31.9102L0.910247 0.910156L0.107148 1.506L22.6786 31.9284L0.0898438 64.3384L0.910242 64.9102Z"
+                            fill="#7A7A7A" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="about section">
+            <h2 class="about__title section-title">
+                <span>О нас</span>
+            </h2>
+            <div class="about__inner">
+                <div class="about__box">
+                    <h3 class="about__box-title">
+                        Наш фитнес клуб это
+                    </h3>
+                    <p class="about__box-text">
+                        Место, где вы можете расслабиться после работы.
+                    </p>
+                    <p class="about__box-text">
+                        Spa-зоны и специально разработанные фитнес программы направлены на восстановление энергии и
+                        ресурса вашего организма.
+                    </p>
+                    <p class="about__box-text">
+                        Ведите здоровый образ жизни с легкостью и удовольтвием!
+                    </p>
+                    <button type="button" class="about__box-btn btn btn-m js-popup-contact-toggle">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="about__photo">
+                    <div class="about__photo-pic about__photo-pic_big">
+                        <img src="images/about-pic.jpg" alt="Фото клуба" class="about__photo-img">
+                    </div>
+                    <a href="#" class="about__photo-link">
+                        Смотреть больше →
+                    </a>
+                    <div class="about__photo-pic about__photo-pic_small">
+                        <img src="images/about-pic-2.jpg" alt="Фото клуба" class="about__photo-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plus section">
+            <h2 class="plus__title section-title">
+                <span>
+                    Наши преимущества
+                </span>
+            </h2>
+            <ul class="plus__list">
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/costs.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Доступные цены
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/place.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        В шаговой доступнсти <br>
+                        <span>от метро</span>
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/gira.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Высококлассное оборудование
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/star.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Профессиональный
+                        тренерский состав
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/snow.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Возможность заморозки <br> <span>абонемента</span>
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/WiFi.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Бесплатный WI-FI <br>
+                        <span>
+                            на территории клуба
+                        </span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <div class="actions">
+            <button type="button" class="actions__btn btn js-popup-contact-toggle">
+                Оставить заявку
+            </button>
+            <a href="#" class="actions__link btn btn-sm">
+                Купить абонемент
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A09dd1d5a490c4d9b45d0a116428bba43fd62b4d48e0e0ff709d19e19423e5502&amp;source=constructor"
+                        width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+                <div class="footer__box">
+                    <h2 class="footer__title">
+                        <span>
+                            Контакты
+                        </span>
+                    </h2>
+                    <p class="footer__address">
+                        г. Москва, ул. Снежная, д. 20
+                    </p>
+                    <a href="tel:+71234567890" class="footer__contact-link footer__contact-link_green">
+                        <span>
+                            Звоните:
+                        </span>
+                        +7 (123) 456 78 90
+                    </a>
+                    <a href="mailto: mail@example.site" class="footer__contact-link">
+                        <span>
+                            Пишите:
+                        </span>
+                        mail@example.site
+                    </a>
+                    <p class="footer__worktime">
+                        <span>ПН-ПТ</span> 9:00 - 20:00 <span>СБ-ВС</span> 8:00 - 22:00
+                    </p>
+                    <div class="footer__social-wrap">
+                        <a href="#" class="footer__social-link">
+                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.1895 24.5C29.1895 27.09 27.09 29.1895 24.5 29.1895C21.91 29.1895 19.8105 27.09 19.8105 24.5C19.8105 21.91 21.91 19.8105 24.5 19.8105C27.09 19.8105 29.1895 21.91 29.1895 24.5Z"
+                                    fill="#C9D3D8" />
+                                <path
+                                    d="M35.467 16.2029C35.2416 15.592 34.882 15.0391 34.4147 14.5853C33.9608 14.118 33.4083 13.7583 32.797 13.5329C32.3013 13.3404 31.5566 13.1112 30.185 13.0488C28.7013 12.9811 28.2564 12.9666 24.5 12.9666C20.7433 12.9666 20.2984 12.9808 18.815 13.0484C17.4434 13.1112 16.6984 13.3404 16.203 13.5329C15.5918 13.7583 15.0389 14.118 14.5854 14.5853C14.1181 15.0391 13.7585 15.5917 13.5327 16.2029C13.3401 16.6986 13.111 17.4437 13.0486 18.8153C12.9809 20.2987 12.9663 20.7436 12.9663 24.5003C12.9663 28.2566 12.9809 28.7015 13.0486 30.1853C13.111 31.5569 13.3401 32.3016 13.5327 32.7973C13.7585 33.4085 14.1177 33.961 14.585 34.4149C15.0389 34.8822 15.5914 35.2418 16.2026 35.4672C16.6984 35.6601 17.4434 35.8893 18.815 35.9517C20.2984 36.0194 20.7429 36.0336 24.4997 36.0336C28.2568 36.0336 28.7016 36.0194 30.1846 35.9517C31.5563 35.8893 32.3013 35.6601 32.797 35.4672C34.024 34.994 34.9937 34.0242 35.467 32.7973C35.6595 32.3016 35.8887 31.5569 35.9515 30.1853C36.0192 28.7015 36.0334 28.2566 36.0334 24.5003C36.0334 20.7436 36.0192 20.2987 35.9515 18.8153C35.8891 17.4437 35.6599 16.6986 35.467 16.2029ZM24.5 31.724C20.51 31.724 17.2756 28.4899 17.2756 24.4999C17.2756 20.5099 20.51 17.2758 24.5 17.2758C28.4897 17.2758 31.7241 20.5099 31.7241 24.4999C31.7241 28.4899 28.4897 31.724 24.5 31.724ZM32.0097 18.6785C31.0774 18.6785 30.3215 17.9226 30.3215 16.9902C30.3215 16.0578 31.0774 15.3019 32.0097 15.3019C32.9421 15.3019 33.698 16.0578 33.698 16.9902C33.6976 17.9226 32.9421 18.6785 32.0097 18.6785Z"
+                                    fill="#C9D3D8" />
+                                <path
+                                    d="M24.5 0C10.9711 0 0 10.9711 0 24.5C0 38.0289 10.9711 49 24.5 49C38.0289 49 49 38.0289 49 24.5C49 10.9711 38.0289 0 24.5 0ZM38.4835 30.3001C38.4155 31.7977 38.1773 32.8202 37.8297 33.7152C37.0988 35.6049 35.6049 37.0988 33.7152 37.8297C32.8206 38.1773 31.7977 38.4151 30.3005 38.4835C28.8003 38.5519 28.321 38.5684 24.5004 38.5684C20.6794 38.5684 20.2005 38.5519 18.6999 38.4835C17.2026 38.4151 16.1798 38.1773 15.2852 37.8297C14.3461 37.4764 13.496 36.9227 12.7932 36.2068C12.0777 35.5044 11.524 34.6539 11.1707 33.7152C10.8231 32.8206 10.5849 31.7977 10.5169 30.3005C10.4477 28.7999 10.4316 28.3206 10.4316 24.5C10.4316 20.6794 10.4477 20.2001 10.5165 18.6999C10.5845 17.2023 10.8223 16.1798 11.17 15.2848C11.5233 14.3461 12.0773 13.4956 12.7932 12.7932C13.4956 12.0773 14.3461 11.5236 15.2848 11.1703C16.1798 10.8227 17.2023 10.5849 18.6999 10.5165C20.2001 10.4481 20.6794 10.4316 24.5 10.4316C28.3206 10.4316 28.7999 10.4481 30.3001 10.5169C31.7977 10.5849 32.8202 10.8227 33.7152 11.17C34.6539 11.5233 35.5044 12.0773 36.2072 12.7932C36.9227 13.496 37.4767 14.3461 37.8297 15.2848C38.1777 16.1798 38.4155 17.2023 38.4839 18.6999C38.5523 20.2001 38.5684 20.6794 38.5684 24.5C38.5684 28.3206 38.5523 28.7999 38.4835 30.3001Z"
+                                    fill="#C9D3D8" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.5 49C38.031 49 49 38.031 49 24.5C49 10.969 38.031 0 24.5 0C10.969 0 0 10.969 0 24.5C0 38.031 10.969 49 24.5 49Z"
+                                    fill="#C9D3D8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23.5746 35.2454H25.4975C25.4975 35.2454 26.0784 35.1816 26.3749 34.8619C26.6479 34.5684 26.6391 34.0173 26.6391 34.0173C26.6391 34.0173 26.6016 31.437 27.7991 31.0571C28.9796 30.6828 30.4955 33.5508 32.1023 34.6536C33.3173 35.4882 34.2405 35.3052 34.2405 35.3052L38.5367 35.2454C38.5367 35.2454 40.7841 35.1069 39.7185 33.3399C39.6311 33.1953 39.0979 32.0327 36.5242 29.6438C33.8304 27.1435 34.1912 27.5479 37.4361 23.2229C39.4123 20.589 40.2024 18.9809 39.9556 18.2922C39.7202 17.6362 38.2668 17.8096 38.2668 17.8096L33.4295 17.8397C33.4295 17.8397 33.0709 17.7908 32.805 17.9498C32.5451 18.1057 32.3778 18.469 32.3778 18.469C32.3778 18.469 31.6122 20.5073 30.5912 22.2407C28.4372 25.8983 27.5759 26.0914 27.2239 25.8643C26.405 25.335 26.6094 23.7378 26.6094 22.6032C26.6094 19.0586 27.1471 17.5807 25.5626 17.1981C25.0367 17.071 24.6498 16.9872 23.3051 16.9737C21.5791 16.9557 20.1182 16.9789 19.2911 17.3842C18.7408 17.6537 18.3163 18.2542 18.5748 18.2887C18.8945 18.3315 19.6186 18.4839 20.0025 19.0067C20.4982 19.681 20.4807 21.1956 20.4807 21.1956C20.4807 21.1956 20.7655 25.3682 19.8156 25.8866C19.1635 26.2421 18.2691 25.5162 16.3488 22.1979C15.3648 20.4981 14.6219 18.6193 14.6219 18.6193C14.6219 18.6193 14.4787 18.2681 14.2232 18.0803C13.9131 17.8528 13.4799 17.7803 13.4799 17.7803L8.88321 17.8104C8.88321 17.8104 8.19317 17.8297 7.93986 18.1297C7.7145 18.3965 7.92195 18.9486 7.92195 18.9486C7.92195 18.9486 11.5207 27.368 15.5954 31.6109C19.3317 35.5009 23.5746 35.2454 23.5746 35.2454Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="footer__copy-text">
+                    <p class="footer__copy-text-p">
+                        Предоставляя свои персональные данные Владельцу сайта <a
+                            href="https://www.f-terra.ru">f-terra.ru</a>,
+                        Посетитель Сайта соглашается на их обработку, в том числе в целях выполнения обязательств перед
+                        Посетителем Сайта услуг, проведения электронных и sms опросов, контроля результатов
+                        маркетинговых акций, клиентской поддержки проведение розыгрышей призов среди Посетителей Сайта,
+                        контроля удовлетворенности Посетителя Сайта, а также качества услуг, оказываемых Владельцем
+                        сайта.
+                    </p>
+                    <p class="footer__copy-text-p">
+                        Под обработкой персональных данных понимается любое действие (операция) или совокупность
+                        действий (операций), совершаемых с использованием средств автоматизации или без использования
+                        таких средств с персональными данными, включая сбор, запись, систематизацию, накопление,
+                        хранение, использование, обезличивание, блокирование, удаление, уничтожение персональных данных.
+                    </p>
+                </div>
+                <div class="footer__copy-text-under">
+                    <p class="footer__copy-text-under-p">
+                        © Все права защищены
+                    </p>
+                </div>
+
+            </div>
+
+        </footer>
+        <div class="popup js-popup-contact">
+            <button class="popup__close js-popup-contact-close">
+                <img src="images/close.svg" alt="Закрыть окно" class="popup__close-img">
+            </button>
+            <div class="popup__content">
+                <form class="form-contact">
+                    <h3 class="form-contact__title">
+                        Здоровый образ жизни это просто!
+                    </h3>
+                    <p class="form-contact__subtitle">
+                        У нас есть все, что нужно
+                        для комфортного фитнеса
+                    </p>
+                    <label class="form-contact__label">
+                        <span class="form-contact__label-name">
+                            Ваше имя
+                        </span>
+                        <input type="text" class="form-contact__input" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="form-contact__label">
+                        <span class="form-contact__label-name">
+                            Номер телефона
+                        </span>
+                        <input type="tel" class="form-contact__input" placeholder="+7 (123) 456 78 90" required>
+                    </label>
+                    <button class="form-contact__sub btn">
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 

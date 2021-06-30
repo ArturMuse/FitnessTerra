@@ -1,0 +1,46 @@
+.intro {
+    background: url("../images/intro-back.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 168px;
+    padding-bottom: 167px;
+    &__box {
+        max-width: 1340px;
+        margin: auto;
+    }
+    &__title {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 97px;
+        color: #ffffff;
+        position: relative;
+        max-width: 450px;
+        span {
+            position: relative;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 105%;
+            height: 26px;
+            background: #e64b3b;
+            display: block;
+            left: -2.5%;
+            bottom: 10px;
+            z-index: 0;
+            border-radius: 5px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 26px;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 41px;
+        color: #ffffff;
+        max-width: 630px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,118 @@
+.btn {
+    max-width: 366px;
+    width: 100%;
+    border: none;
+    background-color: #9cc32f;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: #3b8e87;
+    }
+    &:active {
+        background-color: #4b6b7e;
+    }
+    &-sm {
+        height: 54px;
+        border: 2px solid #9cc32f;
+        background-color: #ffffff;
+        color: #192632;
+        max-width: 312px;
+        &:hover {
+            background-color: #9cc32f;
+            border-color: #9cc32f;
+            color: #ffffff;
+        }
+        &:active {
+            background-color: #4b6b7e;
+            border-color: #4b6b7e;
+        }
+    }
+    &-m {
+        border: 2px solid #f5b7b1;
+        background-color: #ffffff;
+        color: #192632;
+        max-width: 312px;
+        &:hover {
+            background-color: #f5b7b1;
+            border-color: #f5b7b1;
+            color: #ffffff;
+        }
+        &:active {
+            background-color: #fd988e;
+            border-color: #fd988e;
+        }
+    }
+}
+.section {
+    max-width: 1340px;
+    margin: auto;
+    padding-top: 70px;
+    &-title {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 51px;
+        color: #000000;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        span {
+            position: relative;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 27px;
+            background: #e64b3b;
+            display: block;
+            left: -5%;
+            bottom: -5px;
+            z-index: 0;
+            border-radius: 5px;
+        }
+    }
+}
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 75, 75, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    &-show {
+        visibility: visible;
+    }
+    &__content {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+    &__close {
+        border: none;
+        background: none;
+        position: absolute;
+        right: 50px;
+        top: 25px;
+        cursor: pointer;
+    }
+}
