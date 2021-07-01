@@ -24,14 +24,10 @@
 .section {
 }
 .section-title {
-    background: rgba(156, 195, 47, 0.3);
-    border-radius: 5px;
 }
 .tickets-list {
     list-style-type: none;
-
     display: grid;
-
     margin-left: 62px;
     margin-right: 61px;
     margin-top: 70px;
@@ -49,7 +45,6 @@
 
     &__card-inner {
         display: flex;
-
         margin-top: 40px;
         margin-left: 27px;
     }
@@ -91,8 +86,11 @@
         list-style-type: none;
         max-width: 310px;
         margin-top: 60px;
-        padding-left: 57px;
-        padding-right: 42px;
+        margin-left: 57px;
+
+        background: #ffffff;
+        box-shadow: 0px 0px 10px 1px rgba(179, 179, 179, 0.25);
+        border-radius: 15px;
     }
 
     &__card-list-item {
