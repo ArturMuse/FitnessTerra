@@ -92,9 +92,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
     &-show {
-        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
     }
     &__content {
         height: 100%;
