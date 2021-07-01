@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tickets {
+    max-width: 1440px;
+    &__title {
+        font-family: Cormorant Garamond;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 75px;
+
+        color: #000000;
+        max-width: 328px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.section {
+}
+.section-title {
+    background: rgba(156, 195, 47, 0.3);
+    border-radius: 5px;
+}
+.tickets-list {
+    list-style-type: none;
+
+    display: grid;
+
+    margin-left: 62px;
+    margin-right: 61px;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 45px;
+
+    &__card {
+        grid-area: 1fr;
+        display: flex;
+        flex-direction: column;
+        height: 822px;
+        position: relative;
+    }
+
+    &__card-inner {
+        display: flex;
+
+        margin-top: 40px;
+        margin-left: 27px;
+    }
+
+    &__card-img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+    &__card-inner-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+
+    &__card-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+
+        color: #000000;
+    }
+
+    &__card-title-small {
+        margin-top: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #000000;
+    }
+
+    &__card-list {
+        display: block;
+        list-style-type: none;
+        max-width: 310px;
+        margin-top: 60px;
+        padding-left: 57px;
+        padding-right: 42px;
+    }
+
+    &__card-list-item {
+        margin-top: 28px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 27px;
+
+        color: #000000;
+    }
+
+    &__card-btn {
+        display: block;
+        text-align: center;
+
+        border: 2px solid #9cc32f;
+        box-sizing: border-box;
+        border-radius: 15px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #6f6f6f;
+        position: absolute;
+        bottom: 50px;
+    }
+}
+.btn {
+}
+.btn-sm {
+}
