@@ -3,6 +3,7 @@ import '../scss/app.scss';
 /* Your JS Code goes here */
 
 import "./main/sales";
+import "./header";
 import Popup from "./popup";
 
 // Contact Form Popup Init

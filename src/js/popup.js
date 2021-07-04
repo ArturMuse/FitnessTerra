@@ -17,6 +17,12 @@ class Popup {
             this.popup.classList.toggle(this.popupShow)
             this.body.style.overflow = "auto"
         })
+        this.popup.addEventListener("click", (e) => {
+            if (e.target === this.popup) {
+                this.popup.classList.toggle(this.popupShow)
+                this.body.style.overflow = "auto"
+            }
+        })
     }
 }
 export default Popup

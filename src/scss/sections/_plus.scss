@@ -40,3 +40,36 @@
         }
     }
 }
+
+@media screen and (max-width: 1250px) {
+    .plus {
+        &__list {
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            &-item {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .plus {
+        &__list {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .plus {
+        &__list {
+            margin-top: 80px;
+        }
+        &__title {
+            max-width: 350px;
+        }
+    }
+}

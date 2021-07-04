@@ -60,3 +60,18 @@
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .form-contact {
+        padding: 30px 25px;
+        &__title {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 35px;
+        }
+    }
+}

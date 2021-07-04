@@ -119,3 +119,28 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 1390px) {
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1110px) {
+    .popup {
+        &__close {
+            right: 20px;
+        }
+        &__content {
+            padding: 100px 20px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .section {
+        &-title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
