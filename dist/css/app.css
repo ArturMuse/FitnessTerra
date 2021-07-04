@@ -173,7 +173,7 @@ a {
 @media screen and (max-width: 500px) {
   .section-title {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 45px;
   }
 }
 .form-contact {
@@ -572,6 +572,7 @@ a {
   .intro__title {
     font-size: 55px;
     max-width: 310px;
+    line-height: 90px;
   }
   .intro__subtitle {
     font-size: 24px;
@@ -587,7 +588,7 @@ a {
   background: rgba(156, 195, 47, 0.3);
 }
 .sales__inner {
-  margin-top: 90px;
+  margin-top: 70px;
   position: relative;
 }
 .sales__slider-wrap {
@@ -596,6 +597,7 @@ a {
   margin: auto;
   position: relative;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 .sales__slider {
   margin: auto;
@@ -695,9 +697,24 @@ a {
   .sales__inner {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 50px;
   }
   .sales__slider {
     max-width: 340px;
+  }
+  .sales__slider-btn {
+    bottom: 0;
+    top: auto;
+    left: calc(50% - 44px);
+    width: 20px;
+    height: 40px;
+  }
+  .sales__slider-btn svg {
+    width: 100%;
+    height: 100%;
+  }
+  .sales__slider-btn:last-child {
+    right: calc(50% - 44px);
   }
   .sales__slider-wrap {
     max-width: 360px;
@@ -816,6 +833,10 @@ a {
   }
 }
 @media screen and (max-width: 800px) {
+  .about__box-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .about__photo-link {
     margin-top: 100px;
   }
@@ -829,15 +850,28 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
+  .about {
+    padding-bottom: 20px;
+  }
   .about__photo-link {
-    margin-top: 100px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 20px;
+  }
+  .about__photo-pic_big {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .about__photo-pic_small {
-    max-height: 180px;
-    left: 20px;
-    right: auto;
-    max-width: 280px;
-    bottom: 40px;
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: static;
+    max-height: 100%;
+    max-width: 100%;
     height: 100%;
   }
 }

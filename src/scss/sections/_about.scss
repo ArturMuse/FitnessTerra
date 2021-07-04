@@ -114,6 +114,12 @@
 
 @media screen and (max-width: 800px) {
     .about {
+        &__box {
+            &-btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
         &__photo {
             &-link {
                 margin-top: 100px;
@@ -133,17 +139,22 @@
 }
 @media screen and (max-width: 500px) {
     .about {
+        padding-bottom: 20px;
         &__photo {
             &-link {
-                margin-top: 100px;
+                order: 3;
+                margin-top: 20px;
             }
             &-pic {
+                &_big {
+                    order: 1;
+                }
                 &_small {
-                    max-height: 180px;
-                    left: 20px;
-                    right: auto;
-                    max-width: 280px;
-                    bottom: 40px;
+                    margin-top: 30px;
+                    order: 2;
+                    position: static;
+                    max-height: 100%;
+                    max-width: 100%;
                     height: 100%;
                 }
             }
