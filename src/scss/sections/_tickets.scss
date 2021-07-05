@@ -9,14 +9,7 @@
 .tickets {
     max-width: 1440px;
     padding-bottom: 120px;
-    padding-top: 30px;
     &__title {
-        font-family: "Cormorant Garamond";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 62px;
-        line-height: 75px;
-        color: #000000;
         max-width: 328px;
         margin-left: auto;
         margin-right: auto;
@@ -112,12 +105,6 @@
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .tickets {
-        padding-top: 100px;
-    }
-}
-
 @media screen and (max-width: 850px) {
     .tickets-list {
         grid-template-columns: repeat(1, 1fr);
@@ -125,6 +112,14 @@
         max-width: 450px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tickets {
+        &__title {
+            max-width: 300px;
+        }
     }
 }
 

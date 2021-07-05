@@ -1,0 +1,198 @@
+.directions {
+    &__title {
+        max-width: 350px;
+        &::after {
+            background-color: rgba(75, 107, 126, 0.3);
+        }
+    }
+}
+
+.directions-list {
+    max-width: 900px;
+    margin: 70px auto 110px auto;
+    list-style-type: none;
+    &__item {
+        background: #ffffff;
+        box-shadow: 0px 0px 10px 1px rgba(191, 191, 191, 0.25);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-input {
+        display: none;
+    }
+
+    &__item-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-right: 30px;
+    }
+
+    &__item-pic {
+        height: 124px;
+        min-width: 233.5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+        svg {
+            &:first-child {
+                position: absolute;
+                left: -25px;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__item-name {
+        margin-left: 80px;
+        font-size: 28px;
+        line-height: 30px;
+        color: #000000;
+        max-width: 420px;
+        user-select: none;
+        & + svg {
+            margin-left: auto;
+        }
+    }
+
+    &__item-box {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    &__item-list {
+        margin-bottom: 55px;
+        &-item {
+            padding: 15px 75px;
+            border-top: 1px solid #e4e4e4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:last-child {
+                border-bottom: 1px solid #e4e4e4;
+            }
+            p {
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+            }
+            button {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 30px;
+                color: #b3b3b3;
+                border: none;
+                background: none;
+                cursor: pointer;
+                min-width: 99px;
+            }
+        }
+    }
+
+    &__item-actions {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 53px;
+    }
+
+    &__item-actions-btn {
+        margin-right: 45px;
+    }
+
+    &__item-actions-link {
+        max-width: 366px;
+    }
+    &__item {
+        &-input:checked ~ &-box {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .directions-list {
+        &__item {
+            &-name {
+                margin-left: 0;
+                padding-right: 30px;
+            }
+            &-actions {
+                flex-direction: column;
+                align-items: center;
+                &-btn {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+            &-list {
+                &-item {
+                    p {
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .directions-list {
+        &__item {
+            &-actions {
+                max-width: 330px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+            &-list {
+                margin-bottom: 20px;
+                &-item {
+                    padding-left: 22px;
+                    padding-right: 22px;
+                    p {
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            &-label {
+                padding-right: 10px;
+            }
+            &-pic {
+                min-width: 120px;
+                height: 72px;
+                padding-left: 20px;
+                svg {
+                    width: 42.17px;
+                    height: 40px;
+                }
+            }
+            &-name {
+                font-size: 18px;
+                line-height: 20px;
+                max-width: 200px;
+                & + svg {
+                    max-width: 33px;
+                    min-width: 33px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .directions {
+        &__title {
+            max-width: 300px;
+        }
+    }
+}

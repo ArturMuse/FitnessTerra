@@ -120,10 +120,28 @@
     }
 }
 
+.page {
+    &-title {
+        font-family: "Cormorant Garamond";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 60px;
+        color: #000000;
+    }
+}
+
 @media screen and (max-width: 1390px) {
     .section {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .page {
+        &-title {
+            padding-top: 50px;
+        }
     }
 }
 @media screen and (max-width: 1110px) {
@@ -141,6 +159,12 @@
         &-title {
             font-size: 30px;
             line-height: 45px;
+        }
+    }
+    .page {
+        &-title {
+            font-size: 55px;
+            line-height: 55px;
         }
     }
 }
