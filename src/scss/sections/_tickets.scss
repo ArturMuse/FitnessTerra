@@ -28,8 +28,6 @@
 .tickets-list {
     list-style-type: none;
     display: grid;
-    margin-left: 62px;
-    margin-right: 61px;
     margin-top: 70px;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 45px;
@@ -55,6 +53,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 28px;
+        justify-content: center;
     }
 
     &__card-title {
@@ -103,5 +102,45 @@
 
     &__card-btn {
         margin: auto auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .tickets-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .tickets {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .tickets-list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tickets-list {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        &__card {
+            min-width: 100%;
+            &-title {
+                font-size: 28px;
+                &-small {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 }
