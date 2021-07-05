@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-</head>
+<script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
     <div class="wrapper">
@@ -104,75 +104,364 @@
                 </div>
             </div>
         </header>
-        <section class="tickets section">
-            <h1 class="tickets__title section-title page-title"> <span>Абонементы</span> </h1>
-            <ul class="tickets-list">
-                <li class="tickets-list__card">
-                    <div class="tickets-list__card-inner">
-                        <img src="images/card0.svg" alt="family" class="tickets-list__card-img">
-                        <div class="tickets-list__card-inner-wrapper">
-                            <h2 class="tickets-list__card-title">Семейный</h2>
-                            <h3 class="tickets-list__card-title-small">20000₽ в год</h3>
+        <section class="timetable section">
+            <h1 class="timetable__title section-title page-title"> <span>Расписание</span></h1>
+            <p class="timetable__subtitle">
+                Действующее расписание от 19.06.21
+            </p>
+            <input type="radio" name="timetable" id="t0" class="timetable__input" checked>
+            <input type="radio" name="timetable" id="t1" class="timetable__input">
+            <input type="radio" name="timetable" id="t2" class="timetable__input">
+            <input type="radio" name="timetable" id="t3" class="timetable__input">
+            <input type="radio" name="timetable" id="t4" class="timetable__input">
+            <input type="radio" name="timetable" id="t5" class="timetable__input">
+            <input type="radio" name="timetable" id="t6" class="timetable__input">
+            <div class="timetable-tabs">
+                <label for="t0" class="timetable-tabs__item tt-label-0">
+                    Понедельник
+                </label>
+                <label for="t1" class="timetable-tabs__item tt-label-1">
+                    Вторник
+                </label>
+                <label for="t2" class="timetable-tabs__item tt-label-2">
+                    Среда
+                </label>
+                <label for="t3" class="timetable-tabs__item tt-label-3">
+                    Четверг
+                </label>
+                <label for="t4" class="timetable-tabs__item tt-label-4">
+                    Пятница
+                </label>
+                <label for="t5" class="timetable-tabs__item tt-label-5">
+                    Суббота
+                </label>
+                <label for="t6" class="timetable-tabs__item tt-label-6">
+                    Воскресенье
+                </label>
+            </div>
+            <div class="timetable-box">
+                <div class="timetable-box__item tt-box-0">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
                         </div>
                     </div>
-                    <ul class="tickets-list__card-list">
-                        <li class="tickets-list__card-list-item">Безлимитное посещение клуба</li>
-                        <li class="tickets-list__card-list-item">10 персональных тренировок в подарок</li>
-                        <li class="tickets-list__card-list-item">Посещение Spa-зон безлимитно</li>
-                        <li class="tickets-list__card-list-item">Безлимитное посещение бассейна</li>
-                        <li class="tickets-list__card-list-item">Программы детского фитнеса</li>
-                        <li class="tickets-list__card-list-item">Доступ к дестким SPA-зонам</li>
-                    </ul>
-                    <button type="button" class="btn btn-sm  tickets-list__card-btn js-popup-tickets-toggle">Купить
-                        абонемент</button>
-
-                </li>
-                <li class="tickets-list__card">
-                    <div class="tickets-list__card-inner">
-                        <img src="images/card1.svg" alt="sun" class="tickets-list__card-img">
-                        <div class="tickets-list__card-inner-wrapper">
-                            <h2 class="tickets-list__card-title">Утренний</h2>
-                            <h3 class="tickets-list__card-title-small">10000₽ в год</h3>
+                </div>
+                <div class="timetable-box__item tt-box-1">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
                         </div>
                     </div>
-                    <ul class="tickets-list__card-list">
-                        <li class="tickets-list__card-list-item">Безлимитное посещение клуба с 8 до 10</li>
-                        <li class="tickets-list__card-list-item">5 персональных тренировок в подарок</li>
-                        <li class="tickets-list__card-list-item">Посещение Spa-зон 4 раза в месяц</li>
-                        <li class="tickets-list__card-list-item">Безлимитное посещение бассейна</li>
-                    </ul>
-
-                    <button type="button" class="btn btn-sm  tickets-list__card-btn js-popup-tickets-toggle">Купить
-                        абонемент</button>
-
-                </li>
-                <li class="tickets-list__card">
-                    <div class="tickets-list__card-inner">
-                        <img src="images/card2.svg" alt="hat" class="tickets-list__card-img">
-                        <div class="tickets-list__card-inner-wrapper">
-                            <h2 class="tickets-list__card-title">Студенческий</h2>
-                            <h3 class="tickets-list__card-title-small">15000₽ в год</h3>
+                </div>
+                <div class="timetable-box__item tt-box-2">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
                         </div>
                     </div>
-                    <ul class="tickets-list__card-list">
-                        <li class="tickets-list__card-list-item">Безлимитное посещение клуба</li>
-                        <li class="tickets-list__card-list-item">5 персональных тренировок в подарок</li>
-                        <li class="tickets-list__card-list-item">Посещение Spa-зон 8 раз в месяц</li>
-                        <li class="tickets-list__card-list-item">Безлимитное посещение бассейна</li>
-                        <li class="tickets-list__card-list-item">Скидки в баре клуба</li>
-                    </ul>
-                    <button type="button" class="btn btn-sm  tickets-list__card-btn js-popup-tickets-toggle">Купить
-                        абонемент</button>
-                </li>
-            </ul>
+                </div>
+                <div class="timetable-box__item tt-box-3">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                    </div>
+                </div>
+                <div class="timetable-box__item tt-box-4">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                    </div>
+                </div>
+                <div class="timetable-box__item tt-box-5">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                    </div>
+                </div>
+                <div class="timetable-box__item tt-box-6">
+                    <div class="timetable-box__row">
+                        <div class="timetable-box__title-col">
+                            Занятие
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 1
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Зал 2
+                        </div>
+                        <div class="timetable-box__title-col">
+                            Тренер
+                        </div>
+                        <div class="timetable-box__col">
+                            Yoga
+                        </div>
+                        <div class="timetable-box__col">
+                            10:00
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Мария / Александр
+                        </div>
+                        <div class="timetable-box__col">
+                            Stretch
+                        </div>
+                        <div class="timetable-box__col">
+                            -
+                        </div>
+                        <div class="timetable-box__col">
+                            17:00
+                        </div>
+                        <div class="timetable-box__col">
+                            Александр
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div class="actions">
-            <button type="button" class="actions__btn btn js-popup-contact-toggle">
+        <div class="actions actions_timetable">
+            <button type="button" class="actions__btn btn btn-m js-popup-contact-toggle">
                 Оставить заявку
             </button>
-            <a href="index.html#sales" class="actions__link btn btn-sm">
-                Посмотреть акции
-            </a>
         </div>
         <footer id="footer" class="footer">
             <div class="footer__inner">
@@ -269,37 +558,6 @@
                 <form class="form-contact">
                     <h3 class="form-contact__title">
                         Здоровый образ жизни это просто!
-                    </h3>
-                    <p class="form-contact__subtitle">
-                        У нас есть все, что нужно
-                        для комфортного фитнеса
-                    </p>
-                    <label class="form-contact__label">
-                        <span class="form-contact__label-name">
-                            Ваше имя
-                        </span>
-                        <input type="text" class="form-contact__input" placeholder="Ваше имя" required>
-                    </label>
-                    <label class="form-contact__label">
-                        <span class="form-contact__label-name">
-                            Номер телефона
-                        </span>
-                        <input type="tel" class="form-contact__input" placeholder="+7 (123) 456 78 90" required>
-                    </label>
-                    <button class="form-contact__sub btn">
-                        Отправить заявку
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div class="popup js-popup-tickets">
-            <button class="popup__close js-popup-tickets-close">
-                <img src="images/close.svg" alt="Закрыть окно" class="popup__close-img">
-            </button>
-            <div class="popup__content">
-                <form class="form-contact">
-                    <h3 class="form-contact__title">
-                        Оформите ваш абонемент в фитнес прямо сейчас!
                     </h3>
                     <p class="form-contact__subtitle">
                         У нас есть все, что нужно

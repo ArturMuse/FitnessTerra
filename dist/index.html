@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-</head>
+<script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
     <div class="wrapper">
@@ -104,65 +104,188 @@
                 </div>
             </div>
         </header>
-        <section class="tickets section">
-            <h1 class="tickets__title section-title page-title"> <span>Абонементы</span> </h1>
-            <ul class="tickets-list">
-                <li class="tickets-list__card">
-                    <div class="tickets-list__card-inner">
-                        <img src="images/card0.svg" alt="family" class="tickets-list__card-img">
-                        <div class="tickets-list__card-inner-wrapper">
-                            <h2 class="tickets-list__card-title">Семейный</h2>
-                            <h3 class="tickets-list__card-title-small">20000₽ в год</h3>
+        <section class="intro">
+            <div class="intro__box">
+                <h1 class="intro__title">
+                    <span>
+                        ФитнесТерра
+                    </span>
+                </h1>
+                <p class="intro__subtitle">
+                    Получите максимум комфорта
+                    и расслабления от занятий фитнесом
+                </p>
+                <button type="button" class="intro__btn btn js-popup-contact-toggle">
+                    Оставить заявку
+                </button>
+            </div>
+        </section>
+        <section id="sales" class="sales section">
+            <h2 class="sales__title section-title">
+                <span>
+                    Акции
+                </span>
+            </h2>
+            <div class="sales__inner">
+                <div class="sales__slider-wrap">
+                    <div class="sales__slider js-sales-slider">
+                        <div class="sales__slider-wrapper swiper-wrapper">
+                            <div class="sales__slider-item swiper-slide">
+                                <div class="sales__slider-item-pic">
+                                    <img src="images/sales-pic.jpg" alt="Фото">
+                                </div>
+                                <h4 class="sales__slider-item-title">
+                                    Lorem ipsum
+                                </h4>
+                                <p class="sales__slider-item-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <button class="sales__slider-item-btn btn btn-sm js-popup-contact-toggle">
+                                    Узнать больше
+                                </button>
+                            </div>
+                            <div class="sales__slider-item  swiper-slide">
+                                <div class="sales__slider-item-pic ">
+                                    <img src="images/sales-pic.jpg" alt="Фото">
+                                </div>
+                                <h4 class="sales__slider-item-title">
+                                    Lorem ipsum
+                                </h4>
+                                <p class="sales__slider-item-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <button class="sales__slider-item-btn btn btn-sm js-popup-contact-toggle">
+                                    Узнать больше
+                                </button>
+                            </div>
+                            <div class="sales__slider-item swiper-slide">
+                                <div class="sales__slider-item-pic">
+                                    <img src="images/sales-pic.jpg" alt="Фото">
+                                </div>
+                                <h4 class="sales__slider-item-title">
+                                    Lorem ipsum
+                                </h4>
+                                <p class="sales__slider-item-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                                <button class="sales__slider-item-btn btn btn-sm js-popup-contact-toggle">
+                                    Узнать больше
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <ul class="tickets-list__card-list">
-                        <li class="tickets-list__card-list-item">Безлимитное посещение клуба</li>
-                        <li class="tickets-list__card-list-item">10 персональных тренировок в подарок</li>
-                        <li class="tickets-list__card-list-item">Посещение Spa-зон безлимитно</li>
-                        <li class="tickets-list__card-list-item">Безлимитное посещение бассейна</li>
-                        <li class="tickets-list__card-list-item">Программы детского фитнеса</li>
-                        <li class="tickets-list__card-list-item">Доступ к дестким SPA-зонам</li>
-                    </ul>
-                    <button type="button" class="btn btn-sm  tickets-list__card-btn js-popup-tickets-toggle">Купить
-                        абонемент</button>
-
+                </div>
+                <button class="sales__slider-btn slider-btn js-sales-slider-prev">
+                    <svg width="24" height="65" viewBox="0 0 24 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.0898 0.910156L0.0898209 33.9102L23.0898 64.9102L23.8929 64.3143L1.32147 33.8919L23.9102 1.48195L23.0898 0.910156Z"
+                            fill="#7A7A7A" />
+                    </svg>
+                </button>
+                <button class="sales__slider-btn slider-btn js-sales-slider-next">
+                    <svg width="24" height="65" viewBox="0 0 24 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.910242 64.9102L23.9102 31.9102L0.910247 0.910156L0.107148 1.506L22.6786 31.9284L0.0898438 64.3384L0.910242 64.9102Z"
+                            fill="#7A7A7A" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="about section">
+            <h2 class="about__title section-title">
+                <span>О нас</span>
+            </h2>
+            <div class="about__inner">
+                <div class="about__box">
+                    <h3 class="about__box-title">
+                        Наш фитнес клуб это
+                    </h3>
+                    <p class="about__box-text">
+                        Место, где вы можете расслабиться после работы.
+                    </p>
+                    <p class="about__box-text">
+                        Spa-зоны и специально разработанные фитнес программы направлены на восстановление энергии и
+                        ресурса вашего организма.
+                    </p>
+                    <p class="about__box-text">
+                        Ведите здоровый образ жизни с легкостью и удовольтвием!
+                    </p>
+                    <button type="button" class="about__box-btn btn btn-m js-popup-contact-toggle">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="about__photo">
+                    <div class="about__photo-pic about__photo-pic_big">
+                        <img src="images/about-pic.jpg" alt="Фото клуба" class="about__photo-img">
+                    </div>
+                    <a href="#" class="about__photo-link">
+                        Смотреть больше →
+                    </a>
+                    <div class="about__photo-pic about__photo-pic_small">
+                        <img src="images/about-pic-2.jpg" alt="Фото клуба" class="about__photo-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plus section">
+            <h2 class="plus__title section-title">
+                <span>
+                    Наши преимущества
+                </span>
+            </h2>
+            <ul class="plus__list">
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/costs.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Доступные цены
+                    </p>
                 </li>
-                <li class="tickets-list__card">
-                    <div class="tickets-list__card-inner">
-                        <img src="images/card1.svg" alt="sun" class="tickets-list__card-img">
-                        <div class="tickets-list__card-inner-wrapper">
-                            <h2 class="tickets-list__card-title">Утренний</h2>
-                            <h3 class="tickets-list__card-title-small">10000₽ в год</h3>
-                        </div>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/place.svg" alt="Цены" class="plus__list-item-img">
                     </div>
-                    <ul class="tickets-list__card-list">
-                        <li class="tickets-list__card-list-item">Безлимитное посещение клуба с 8 до 10</li>
-                        <li class="tickets-list__card-list-item">5 персональных тренировок в подарок</li>
-                        <li class="tickets-list__card-list-item">Посещение Spa-зон 4 раза в месяц</li>
-                        <li class="tickets-list__card-list-item">Безлимитное посещение бассейна</li>
-                    </ul>
-
-                    <button type="button" class="btn btn-sm  tickets-list__card-btn js-popup-tickets-toggle">Купить
-                        абонемент</button>
-
+                    <p class="plus__list-item-title">
+                        В шаговой доступнсти <br>
+                        <span>от метро</span>
+                    </p>
                 </li>
-                <li class="tickets-list__card">
-                    <div class="tickets-list__card-inner">
-                        <img src="images/card2.svg" alt="hat" class="tickets-list__card-img">
-                        <div class="tickets-list__card-inner-wrapper">
-                            <h2 class="tickets-list__card-title">Студенческий</h2>
-                            <h3 class="tickets-list__card-title-small">15000₽ в год</h3>
-                        </div>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/gira.svg" alt="Цены" class="plus__list-item-img">
                     </div>
-                    <ul class="tickets-list__card-list">
-                        <li class="tickets-list__card-list-item">Безлимитное посещение клуба</li>
-                        <li class="tickets-list__card-list-item">5 персональных тренировок в подарок</li>
-                        <li class="tickets-list__card-list-item">Посещение Spa-зон 8 раз в месяц</li>
-                        <li class="tickets-list__card-list-item">Безлимитное посещение бассейна</li>
-                        <li class="tickets-list__card-list-item">Скидки в баре клуба</li>
-                    </ul>
-                    <button type="button" class="btn btn-sm  tickets-list__card-btn js-popup-tickets-toggle">Купить
-                        абонемент</button>
+                    <p class="plus__list-item-title">
+                        Высококлассное оборудование
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/star.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Профессиональный
+                        тренерский состав
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/snow.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Возможность заморозки <br> <span>абонемента</span>
+                    </p>
+                </li>
+                <li class="plus__list-item">
+                    <div class="plus__list-item-pic">
+                        <img src="images/WiFi.svg" alt="Цены" class="plus__list-item-img">
+                    </div>
+                    <p class="plus__list-item-title">
+                        Бесплатный WI-FI <br>
+                        <span>
+                            на территории клуба
+                        </span>
+                    </p>
                 </li>
             </ul>
         </section>
@@ -170,16 +293,15 @@
             <button type="button" class="actions__btn btn js-popup-contact-toggle">
                 Оставить заявку
             </button>
-            <a href="index.html#sales" class="actions__link btn btn-sm">
-                Посмотреть акции
+            <a href="tickets.html" class="actions__link btn btn-sm">
+                Купить абонемент
             </a>
         </div>
         <footer id="footer" class="footer">
             <div class="footer__inner">
                 <div class="footer__map">
-                    <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A09dd1d5a490c4d9b45d0a116428bba43fd62b4d48e0e0ff709d19e19423e5502&amp;source=constructor"
-                        width="100%" height="100%" frameborder="0"></iframe>
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09dd1d5a490c4d9b45d0a116428bba43fd62b4d48e0e0ff709d19e19423e5502&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
                 <div class="footer__box">
                     <h2 class="footer__title">
@@ -269,37 +391,6 @@
                 <form class="form-contact">
                     <h3 class="form-contact__title">
                         Здоровый образ жизни это просто!
-                    </h3>
-                    <p class="form-contact__subtitle">
-                        У нас есть все, что нужно
-                        для комфортного фитнеса
-                    </p>
-                    <label class="form-contact__label">
-                        <span class="form-contact__label-name">
-                            Ваше имя
-                        </span>
-                        <input type="text" class="form-contact__input" placeholder="Ваше имя" required>
-                    </label>
-                    <label class="form-contact__label">
-                        <span class="form-contact__label-name">
-                            Номер телефона
-                        </span>
-                        <input type="tel" class="form-contact__input" placeholder="+7 (123) 456 78 90" required>
-                    </label>
-                    <button class="form-contact__sub btn">
-                        Отправить заявку
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div class="popup js-popup-tickets">
-            <button class="popup__close js-popup-tickets-close">
-                <img src="images/close.svg" alt="Закрыть окно" class="popup__close-img">
-            </button>
-            <div class="popup__content">
-                <form class="form-contact">
-                    <h3 class="form-contact__title">
-                        Оформите ваш абонемент в фитнес прямо сейчас!
                     </h3>
                     <p class="form-contact__subtitle">
                         У нас есть все, что нужно
