@@ -11,13 +11,14 @@
         margin: auto;
     }
     &__title {
-        font-family: "Cormorant Garamond", serif;
+        font-family: "Ethnocentric", arial;
         font-weight: bold;
-        font-size: 80px;
-        line-height: 97px;
+        font-size: 50px;
+        line-height: 85px;
         color: #ffffff;
         position: relative;
-        max-width: 450px;
+        max-width: 560px;
+        text-align: center;
         span {
             position: relative;
             z-index: 1;
@@ -59,9 +60,9 @@
         height: 100vh;
         min-height: 675px;
         &__title {
-            font-size: 55px;
-            max-width: 310px;
-            line-height: 90px;
+            font-size: 30px;
+            max-width: 340px;
+            line-height: 75px;
         }
         &__subtitle {
             font-size: 24px;

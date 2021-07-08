@@ -2,7 +2,7 @@
     max-width: 1340px;
     margin: auto;
     &__title {
-        max-width: 195px;
+        max-width: 280px;
         &::after {
             background: rgba(59, 142, 135, 0.3);
         }
@@ -46,6 +46,9 @@
 
 @media screen and (max-width: 500px) {
     .gallery {
+        &__title {
+            max-width: 210px;
+        }
         &__box {
             margin-bottom: 100px;
             &-pic {

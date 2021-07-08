@@ -1,6 +1,6 @@
 .timetable {
     &__title {
-        max-width: 300px;
+        max-width: 405px;
         margin-bottom: 35px;
         &::after {
             background: rgba(230, 75, 59, 0.3);
@@ -127,6 +127,11 @@
 }
 
 @media screen and (max-width: 500px) {
+    .timetable {
+        &__title {
+            max-width: 305px;
+        }
+    }
     .timetable-tabs {
         margin-top: 65px;
         &__item {

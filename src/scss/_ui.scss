@@ -119,15 +119,19 @@
         cursor: pointer;
     }
 }
-
+@font-face {
+    font-family: "Ethnocentric";
+    src: url("../fonts/font.ttf") format("ttf"), url("../fonts/font.woff") format("woff");
+}
 .page {
     &-title {
-        font-family: "Ethnocentric W05 Regular";
+        font-family: "Ethnocentric", arial;
         font-style: normal;
         font-weight: bold;
-        font-size: 62px;
-        line-height: 60px;
+        font-size: 40px;
+        line-height: 50px;
         color: #000000;
+        text-align: center;
     }
 }
 
@@ -154,7 +158,7 @@
         }
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
     .section {
         &-title {
             font-size: 30px;
@@ -163,8 +167,8 @@
     }
     .page {
         &-title {
-            font-size: 55px;
-            line-height: 55px;
+            font-size: 28px;
+            line-height: 40px;
         }
     }
 }

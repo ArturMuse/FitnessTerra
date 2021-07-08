@@ -1,6 +1,6 @@
 .directions {
     &__title {
-        max-width: 350px;
+        max-width: 450px;
         &::after {
             background-color: rgba(75, 107, 126, 0.3);
         }
@@ -117,6 +117,9 @@
         &-input:checked ~ &-box {
             height: auto;
         }
+        &-input:checked ~ &-label &-name + svg {
+            transform: rotate(180deg);
+        }
     }
 }
 
@@ -192,7 +195,12 @@
 @media screen and (max-width: 500px) {
     .directions {
         &__title {
-            max-width: 300px;
+            max-width: 310px;
+        }
+        &-list {
+            &__item {
+                margin-bottom: 15px;
+            }
         }
     }
 }

@@ -10,7 +10,7 @@
     max-width: 1440px;
     padding-bottom: 120px;
     &__title {
-        max-width: 328px;
+        max-width: 420px;
         margin-left: auto;
         margin-right: auto;
         &::after {
@@ -102,6 +102,9 @@
     .tickets-list {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
